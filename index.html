@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Vargas — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="background">
+    <span class="hide" id="email-text">jvargas4490@gmail.com</span>
+
+    <nav>
+        <a href="#" class="nav-logo">return start;</a>
+        <ul class="nav-links">
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#proj">Projects</a></li>
+        </ul>
+    </nav> 
+    
+    <section id="intro" class="animate">
+        <div class="intro-name">Javier Vargas</div>
+        <div class="intro-bio">
+            I like working on front-end dev across mobile and web applications, compilers like rustc, and scripting.<br>
+            Let's chat.
+        </div>
+        <div class="intro-socials">
+            <div class="social-item">
+                <div class="social-line social-top"></div>
+                <div class="social-line social-bot"></div>
+                <div class="social-logo">
+                    <div class="logo-lft"></div>
+                    <div class="logo-top"></div>
+                    <div class="logo-right"></div>
+                    <div class="logo-bot"></div>
+                    <div class="copy-msg">Copy to clipboard</i></div>
+                    <i id="email" class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="social-text">Email</div>
+            </div>
+            <div class="social-item">
+                <div class="social-line social-top"></div>
+                <div class="social-line social-bot"></div>
+                <a href="https://www.linkedin.com/in/javier-vargas4490/" target="_blank" class="social-logo">
+                    <div class="logo-lft"></div>
+                    <div class="logo-top"></div>
+                    <div class="logo-right"></div>
+                    <div class="logo-bot"></div>
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <div class="social-text">Linkedin</div>
+            </div>
+            <div class="social-item">
+                <div class="social-line social-top"></div>
+                <div class="social-line social-bot"></div>
+                <a href="https://github.com/jvarCS" target="_blank" class="social-logo">
+                    <div class="logo-lft"></div>
+                    <div class="logo-top"></div>
+                    <div class="logo-right"></div>
+                    <div class="logo-bot"></div>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <div class="social-text">Github</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="exp" class="section-theme section-border reveal">
+        <div class="section-label ">// EXPERIENCE</div>
+        <div class="card-content ">
+            <div class="card bg-border">
+                <div class="line line-top"></div>
+                <div class="line line-bot"></div>
+                <div class="card-title">Android Research</div>
+                <div class="card-data">
+                    <ul>
+                        <li>DARPA sponsored effort in developing a static analysis tool for Android applications.</li>
+                        <li>Used existing analysis methods to identify traversal and hijacking vulnerabilities in Android apk files.</li>
+                        <li>Pariticipated in DARPA hackathons using developed tools.</li>
+                    </ul>                    
+                </div>
+            </div>
+            <div class="card bg-border">
+                <div class="line line-top"></div>
+                <div class="line line-bot"></div>
+                <div class="card-title">Rust Research</div>
+                <div class="card-data">
+                    <ul>
+                        <li>Research focused on the Rust language and how it handles memory safety.</li>
+                        <li>Converted C programs into Rust using c2rust transpiler.</li>
+                        <li>Designed key-value database using C++ and SQlite to keep record of keywords found in Rust crates and CVEs.</li>
+                        <li>Modified custom rustc toolchain to include raw pointer annotation on Rust driver compilation.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card bg-border">
+                <div class="line line-top"></div>
+                <div class="line line-bot"></div>
+                <div class="card-title">Rust LREU</div>
+                <div class="card-data">
+                    <ul>
+                        <li>Developed scripting methods to automate retrieval of CVEs involing raw pointers and functions related to their usage.</li>
+                        <li>Produced POCs from retrieved CVEs to showcase exploits in memory safety with raw pointers.</li>
+                        <li>Documented efforts in weekly reports to be reviewed with mentors in weekly meetings.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section id="proj" class="section-theme section-border reveal">
+        <div class="section-label">// PROJECTS</div>
+        <div class="card-content">
+            <div class="card bg-border">
+                <div class="line line-top"></div>
+                <div class="line line-bot"></div>
+                <div class="card-title">BetterSolutions LC</div>
+                <div class="card-data">
+                    Chrome extension that detects when you submit an accepted solution on LeetCode. Scrapes your code and sends to LLM to perform time and space complexity analysis.
+                    Display handled by pop-up UI for seamless integration.
+                </div>
+                <div class="project-tools">
+                    <div class="project-tools-card">Javascript</div>
+                    <div class="project-tools-card">OpenAI API</div>
+                </div>
+                <a href="https://github.com/jvarCS/CodeLock_Android" target="_blank" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="card bg-border">
+                <div class="line line-top"></div>
+                <div class="line line-bot"></div>
+                <div class="card-title">CodeLock</div>
+                <div class="card-data">
+                    An Android app that checks if you have solved a LeetCode problem today. Takes username as input and determines if latest accepted submission timestamp matches current day.                    
+                </div>
+                <div class="project-tools">
+                    <div class="project-tools-card">Kotlin</div>
+                    <div class="project-tools-card">Jetpack Compose</div>
+                    <div class="project-tools-card">GraphQL API</div>
+                </div>
+                <a href="https://github.com/jvarCS/CodeLock_Android" target="_blank" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="card bg-border">
+                <div class="line line-top"></div>
+                <div class="line line-bot"></div>
+                <div class="card-title">Cyberpunk RPG</div>
+                <div class="card-data">
+                    Terminal based RPG written in C++ containing RNG loot events, combat interactions mirroring V.A.T.S from the Fallout games,
+                    and decision dependent story progression.
+                </div>
+                <div class="project-tools">
+                    <div class="project-tools-card">C++</div>
+                    <div class="project-tools-card">Windows CLI</div>
+                </div>
+                <a href="https://github.com/jvarCS/Cyberpunk-RPG" target="_blank" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>     
+            </div>
+            <div class="card bg-border">
+                <div class="line line-top"></div>
+                <div class="line line-bot"></div>
+                <div class="card-title">Tile Shipping Express</div>
+                <div class="card-data">
+                    Browser application that reads shipping manifest and generates display for present containers. Computes fastest load and unload pathing for containers.
+                    Made as a tool for fictional port company. 
+                </div>
+                <div class="project-tools">
+                    <div class="project-tools-card">Python</div>
+                    <div class="project-tools-card">Flask</div>
+                </div>
+                <a href="https://github.com/jvarCS/TileShippingExpress_Function" target="_blank" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>            
+        </div>
+    </section>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
